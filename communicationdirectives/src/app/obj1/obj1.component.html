@@ -1,0 +1,9 @@
+<br>
+<hr><hr>
+<input type="text" [(ngModel)]="name" placeholder="Enter Name"><br><br>
+<input type="text" [(ngModel)]="city" placeholder="Enter City"><br><br>
+<button (click)="submit()">Submit</button>
+
+
+
+<app-obj2 [submitobj1] = "submitobj" (childEvent)="received($event)"></app-obj2>

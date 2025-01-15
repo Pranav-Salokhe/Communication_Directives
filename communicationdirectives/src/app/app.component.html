@@ -1,0 +1,39 @@
+<!-- <h2>@input and @output studied</h2>
+
+<input type="text" [(ngModel)]="name">
+
+<app-child [name]="name" (messageChanged)="receivedMessage($event)"></app-child>
+<hr>
+Message Received from child: {{ message }}
+
+
+<br><br> -->
+
+
+
+<!-- Task -->
+<!-- <h1>Task of communication</h1>
+<input type="text" [(ngModel)]="message1" >
+Message Received from child:{{childmes}}
+<hr>
+
+<app-child [name1]="message1" (messageEvent)="receivedMessage2($event)"></app-child> -->
+
+
+<!-- Task2 -->
+Parent Side: <br>
+<input type="text" placeholder="Enter Name" [(ngModel)]="name1"><br><br>
+<input type="text" placeholder="Enter City" [(ngModel)]="city1"><br><br>
+child-Name is:{{parentobj1.name2}}
+<br>
+Child-City is:{{parentobj1.city2}}
+<br><br>
+<button (click)="butfun()">Click</button>
+<br><hr>
+<app-child [parentobj1]="parentobj" (messageEvent)="receivedMessage($event)"></app-child>
+
+<!-- Task3 -->
+<app-component1></app-component1>
+
+<!-- Task4 -->
+<app-obj1></app-obj1>

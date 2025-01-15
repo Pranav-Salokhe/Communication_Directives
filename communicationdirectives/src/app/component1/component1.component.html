@@ -1,0 +1,7 @@
+<br><hr>
+
+<input type="text" [(ngModel)]="txtname" placeholder="Enter Name">
+<br><br>
+<button (click)="butfunc()">Click</button>
+<br><hr>
+<app-component2 [name] = "txtname1" (namese)="updatevalue($event)"></app-component2>
