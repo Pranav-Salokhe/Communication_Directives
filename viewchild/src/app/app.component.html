@@ -1,0 +1,9 @@
+<h1>ViewChild for(child to parent)</h1>
+
+<h3>Parent side</h3>
+message from child:{{fromchild}}
+<input type="text" [(ngModel)]="tochild">&nbsp;
+<button (click)="tochildfun()">Click to send child</button>
+{{tochild}}
+<hr>
+<app-child [childmess]="message" (datatoparent)="childmess($event)"></app-child>
